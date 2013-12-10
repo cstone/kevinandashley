@@ -1,4 +1,14 @@
 Kevinandashley::Application.routes.draw do
+  resources :articles
+
+
+  resources :pages
+
+  match 'pages/:permalink', :controller => 'pages', :action => 'show'
+
+  root :to => 'blog#index'
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

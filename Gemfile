@@ -1,11 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
-gem 'simple_form'
 gem 'font-awesome-rails'
+gem 'simple_form'
 gem 'turbolinks'
 gem 'jquery-turbolinks'
-gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails', :github => 'anjlab/bootstrap-rails'
 gem 'devise'
 gem 'kaminari'
 gem 'acts-as-taggable-on'
