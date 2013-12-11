@@ -1,0 +1,7 @@
+<% @articles.each do |article| %>
+    <h3><%= link_to_unless_current article.title, article %></h3>
+    Posted <%= time_ago_in_words(article.created_at) %> ago  in
+    <p>&nbsp;</p>
+    <p><%= simple_format(article.body) %></p>
+    <hr>
+<% end %>

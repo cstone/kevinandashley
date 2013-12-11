@@ -21,6 +21,11 @@ body {
     box-shadow: none;
 }
 
+.navbar .active, .navbar > li > .active {
+  background-color: rgb(0, 180, 255);
+  color: #FFFFFF;
+}
+
 .containermargintop {
 	margin-top: 80px;
 }

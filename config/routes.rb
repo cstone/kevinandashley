@@ -1,10 +1,14 @@
 Kevinandashley::Application.routes.draw do
+  get "blog/index"
+
   resources :articles
 
 
   resources :pages
 
   match 'pages/:permalink', :controller => 'pages', :action => 'show'
+
+  match 'blog' => 'blog#index', :as => 'blog'
 
   root :to => 'blog#index'
 

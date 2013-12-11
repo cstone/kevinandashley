@@ -2,8 +2,12 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.all
-
+    #@articles = Article.where(:user_id => current_user.id).order('created_at DESC')
+    if params[:tag]
+      @articles = Article.tagged_with(params[:tag]).page(params[:page]).per(5)
+    else
+      @articles = Article.order('created_at DESC').page(params[:page]).per(5)
+    end
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @articles }
