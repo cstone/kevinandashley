@@ -1,0 +1,21 @@
+<div class="whitebox">
+<%= simple_form_for(@event, :html => { :class => 'form-horizontal' })   do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-group">
+    <%= f.input :title %>
+    <%= f.input :description %>
+    <%= f.input :venue %>
+    <%= f.input :address %>
+    <%= f.input :city %>
+    <%= f.input :state %>
+    <%= f.input :zip %>
+    <%= f.input :date %>
+    <%= f.input :time %>
+    <%= f.input :event_image %>
+    <%= f.input :url %>
+    <%= f.button :submit %>
+  </div>
+
+<% end %>
+</div>

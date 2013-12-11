@@ -1,0 +1,54 @@
+
+<h3><%= @event.title %></h3>
+
+<p><%= @event.description %></p>
+<p>&nbsp;</p>
+
+<table width="80%" class="table table-striped">
+  <tr>
+    <td width="15%"><strong>Date:</strong></td>
+    <td width="85%"><%= @event.date.strftime("%m/%d/%Y") %></td>
+  </tr>
+  <tr>
+    <td><strong>Time:</strong></td>
+    <td><%= @event.time.strftime("%I:%M %p") %></td>
+  </tr>
+  <% if !@event.venue.empty? %>
+  <tr>
+    <td><strong>Venue:</strong></td>
+    <td><%= @event.venue %></td>
+  </tr>
+  <% end %>
+  <% if !@event.address.empty? %>
+  <tr>
+    <td><strong>Address:</strong></td>
+    <td><%= @event.address %></td>
+  </tr>
+  <% end %>
+  <% if !@event.city.empty? %>
+  <tr>
+    <td><strong>City:</strong></td>
+    <td><%= @event.city %></td>
+  </tr>
+  <% end %>
+  <% if !@event.state.empty? %>
+  <tr>
+    <td><strong>State:</strong></td>
+    <td><%= @event.state %></td>
+  </tr>
+  <% end %>
+  <% if !@event.zip.nil? %>
+  <tr>
+    <td><strong>Zip:</strong></td>
+    <td><%= @event.zip %></td>
+  </tr>
+  <% end %>
+  <% if !@event.url.empty? %>
+  <tr>
+    <td><strong>Website:</strong></td>
+    <td><%= link_to @event.url, @event.url %></td>
+  </tr>
+  <% end %>
+</table>
+
+<hr>
