@@ -1,4 +1,7 @@
 Kevinandashley::Application.routes.draw do
+  resources :videos
+
+
   resources :events
 
 

@@ -1,6 +1,6 @@
 
 <h3><%= @event.title %></h3>
-
+<p><%= @event.date.strftime("%m/%d/%Y") %> at <%= @event.time.strftime("%I:%M %p") %></p>
 <p><%= @event.description %></p>
 <p>&nbsp;</p>
 
