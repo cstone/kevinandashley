@@ -3,5 +3,6 @@
     Posted <%= time_ago_in_words(article.created_at) %> ago  in
     <p>&nbsp;</p>
     <p><%= simple_format(article.body) %></p>
+    <p class="text-right"><%= link_to 'Read More', article, class: 'btn btn-primary btn-sm' %></p>
     <hr>
 <% end %>
