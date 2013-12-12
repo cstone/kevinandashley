@@ -43,7 +43,9 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><%= link_to 'Facebook', 'https://www.facebook.com/ISTAEntertainmentSpotlight', target: 'blank' %></li>
-            <li><%= link_to 'Contact Us', '#' %></li>
+            <li class="<%= is_active?(contact_us_path) %>">
+              <%= link_to 'Contact Us', contact_us_path %>
+            </li>
           </ul>
         </li>
       </ul>
