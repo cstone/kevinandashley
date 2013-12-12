@@ -30,7 +30,7 @@
         <li class="<%= is_active?(shows_path) %> <%= 'active' if controller_name == 'shows' %>">
           <%= link_to 'Shows', shows_path %>
         </li>
-        <li class="<%= is_active?(blog_path) %> <%= 'active' if controller_name == 'blog' %>">
+        <li class="<%= is_active?(blog_path) %> <%= 'active' if controller_name == 'blog' %> <%= 'active' if controller_name == 'articles' %>">
           <%= link_to 'Blog', blog_path %>
         </li>
         <li class="<%= is_active?(events_path) %> <%= 'active' if controller_name == 'events' %>">

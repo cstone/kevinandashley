@@ -16,7 +16,7 @@ Kevinandashley::Application.routes.draw do
 
   match 'blog' => 'blog#index', :as => 'blog'
 
-  root :to => 'blog#index'
+  root :to => 'home#index'
 
 
   # The priority is based upon order of creation:
