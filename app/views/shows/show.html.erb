@@ -1,0 +1,22 @@
+<h3><%= @show.topic %></h3>
+<p><%= @show.date.strftime("%m/%d/%Y") %> at <%= @show.time.strftime("%I:%M %p") %></p>
+<p><%= @show.description %></p>
+<p>&nbsp;</p>
+
+<table width="80%" class="table table-striped">
+  <tr>
+    <td width="15%"><strong>Date:</strong></td>
+    <td width="85%"><%= @show.date.strftime("%m/%d/%Y") %></td>
+  </tr>
+  <tr>
+    <td><strong>Time:</strong></td>
+    <td><%= @show.time.strftime("%I:%M %p") %></td>
+  </tr>
+  <% if !@show.guest.empty? %>
+      <tr>
+        <td><strong>Guest:</strong></td>
+        <td><%= @show.guest %></td>
+      </tr>
+  <% end %>
+</table>
+<hr>

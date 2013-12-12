@@ -42,8 +42,10 @@
       -------------------------------------------------
       ------------------------------------------------>
       <div class="col-md-9" >
+        <% if current_page?(root_path) %>
+            <%= render(:partial => 'layouts/structure/mainphoto')  %>
+        <% end %>
         <%= yield %>
-
       </div>
 
 
@@ -65,9 +67,6 @@
       -------------------------------------------------
       ------------------------------------------------>
       <div class="col-md-3">
-
-        <div class="row whitebox">
-        </div>
         <div class="row text-center sidebox">
           <img src="https://storage.googleapis.com/support-kms-prod/SNP_2922333_en_v0" alt="" height="auto">
         </div>

@@ -13,6 +13,7 @@
       <ul class="nav navbar-nav">
         <li><%= link_to 'Home', root_path %></li>
         <li><%= active_link_to 'About The Show', '/pages/about-the-show' %></li>
+        <li><%= active_link_to 'About ISTA', '/pages/about-ista' %></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">The Cast <b class="caret"></b></a>
           <ul class="dropdown-menu">
@@ -20,7 +21,7 @@
             <li><%= active_link_to 'About Kevin', '/pages/about-kevin' %></li>
           </ul>
         </li>
-        <li><%= active_link_to 'Shows', '#' %></li>
+        <li><%= active_link_to 'Shows', shows_path %></li>
         <li><%= active_link_to 'Blog', blog_path %></li>
         <li><%= active_link_to 'Events', events_path %></li>
         <li><%= active_link_to 'Videos', videos_path %></li>

@@ -1,0 +1,24 @@
+<h3>Upcoming Shows</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique turpis at orci vestibulum, sit amet ultricies elit volutpat. Phasellus dapibus id urna at condimentum. Cras dignissim, lectus non viverra tristique, dui felis condimentum dolor, vitae porta elit odio non turpis. Suspendisse mollis lacus non felis consectetur, ac elementum nibh porttitor. Duis facilisis nisi eu risus dictum, a iaculis risus congue. Aliquam mattis interdum purus, ac interdum enim tincidunt vehicula. Curabitur egestas ut lectus eget cursus. </p>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Topic</th>
+    <th>Guest</th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @shows.each do |show| %>
+      <tr>
+        <td><%= link_to show.date.strftime("%m/%d/%Y"), show %></td>
+        <td><%= link_to show.time.strftime("%I:%M %p"), show %></td>
+        <td><%= link_to show.topic, show %></td>
+        <td><%= link_to show.guest, show %></td>
+        <td><%= link_to 'More Info', show %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
