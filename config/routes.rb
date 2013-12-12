@@ -1,12 +1,9 @@
 Kevinandashley::Application.routes.draw do
   resources :shows
 
-
   resources :videos
 
-
   resources :events
-
 
   get "blog/index"
 
