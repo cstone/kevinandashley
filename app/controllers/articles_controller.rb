@@ -4,9 +4,9 @@ class ArticlesController < ApplicationController
   def index
     #@articles = Article.where(:user_id => current_user.id).order('created_at DESC')
     if params[:tag]
-      @articles = Article.tagged_with(params[:tag]).page(params[:page]).per(5)
+      @articles = Article.tagged_with(params[:tag]).page(params[:page]).per(10)
     else
-      @articles = Article.order('created_at DESC').page(params[:page]).per(5)
+      @articles = Article.order('created_at DESC').page(params[:page]).per(10)
     end
     respond_to do |format|
       format.html # index.html.erb

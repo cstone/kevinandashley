@@ -2,7 +2,7 @@ class VideosController < ApplicationController
   # GET /videos
   # GET /videos.json
   def index
-    @videos = Video.order('created_at DESC').all
+    @videos = Video.order('created_at DESC').page(params[:page]).per(10)
 
     respond_to do |format|
       format.html # index.html.erb

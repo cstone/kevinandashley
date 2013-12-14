@@ -2,7 +2,7 @@ class ShowsController < ApplicationController
   # GET /shows
   # GET /shows.json
   def index
-    @shows = Show.all
+    @shows = Show.page(params[:page]).per(25)
 
     respond_to do |format|
       format.html # index.html.erb

@@ -2,7 +2,7 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    @events = Event.where('date >= ?', Date.today).order(:date).all
+    @events = Event.where('date >= ?', Date.today).order(:date).page(params[:page]).per(25)
 
     respond_to do |format|
       format.html # index.html.erb

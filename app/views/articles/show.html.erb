@@ -2,3 +2,4 @@
 <p>Posted <%= time_ago_in_words(@article.created_at) %> ago</p>
 <p><%= simple_format(@article.body) %></p>
 <hr>
+<%= render 'layouts/structure/disqus' %>

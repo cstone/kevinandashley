@@ -25,8 +25,10 @@
 -------------------------------------------------
 -------------------------------------------------
 ------------------------------------------------>
-<div class="text-center">
-  <img src="http://placehold.it/1170x150">
+<div class="row">
+  <div class="photo-centered">
+    <img src="https://s3.amazonaws.com/istaentertainment/photobar.jpg" class="photobar">
+  </div>
 </div>
 
 
@@ -43,10 +45,6 @@
       -------------------------------------------------
       ------------------------------------------------>
       <div class="col-md-9" >
-        This is the home controller.
-        <% if current_page?(root_path) %>
-            <%= render(:partial => 'layouts/structure/mainphoto')  %>
-        <% end %>
         <%= yield %>
       </div>
 
@@ -69,14 +67,11 @@
       -------------------------------------------------
       ------------------------------------------------>
       <div class="col-md-3">
-        <div class="row">
-          <%= render 'layouts/structure/side-facebook' %>
-        </div>
-        <div class="row">
-          <%= render 'layouts/structure/side-twitter' %>
-        </div>
         <div class="row text-center">
           <img src="https://storage.googleapis.com/support-kms-prod/SNP_2922347_en_v0" alt="" height="auto">
+        </div>
+        <div class="row">
+          <%= render 'layouts/structure/upcoming-events' %>
         </div>
       </div>
       <!-----------------------------------------------
@@ -134,7 +129,6 @@
 
 
 </div> <!-- /container -->
-
 
 
 
