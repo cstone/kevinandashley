@@ -1,5 +1,10 @@
-<h3>Upcoming Events</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique turpis at orci vestibulum, sit amet ultricies elit volutpat. Phasellus dapibus id urna at condimentum. Cras dignissim, lectus non viverra tristique, dui felis condimentum dolor, vitae porta elit odio non turpis. Suspendisse mollis lacus non felis consectetur, ac elementum nibh porttitor. Duis facilisis nisi eu risus dictum, a iaculis risus congue. Aliquam mattis interdum purus, ac interdum enim tincidunt vehicula. Curabitur egestas ut lectus eget cursus. </p>
+<% if params[:tag] %>
+    <p class="text-right"><%= link_to 'Back to all events', events_path, class: 'btn btn-danger btn-sm' %></p>
+    <h3>Upcoming Events tagged with <%= params[:tag] %></h3>
+<% else %>
+    <h3>Upcoming Events</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique turpis at orci vestibulum, sit amet ultricies elit volutpat. Phasellus dapibus id urna at condimentum. Cras dignissim, lectus non viverra tristique, dui felis condimentum dolor, vitae porta elit odio non turpis. Suspendisse mollis lacus non felis consectetur, ac elementum nibh porttitor. Duis facilisis nisi eu risus dictum, a iaculis risus congue. Aliquam mattis interdum purus, ac interdum enim tincidunt vehicula. Curabitur egestas ut lectus eget cursus. </p>
+<% end %>
 <table class="table table-striped">
   <thead>
   <tr>

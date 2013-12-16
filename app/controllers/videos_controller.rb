@@ -2,7 +2,11 @@ class VideosController < ApplicationController
   # GET /videos
   # GET /videos.json
   def index
-    @videos = Video.order('created_at DESC').page(params[:page]).per(10)
+    if params[:tag]
+      @videos = Video.tagged_with(params[:tag]).order('created_at DESC').page(params[:page]).per(10)
+    else
+      @videos = Video.order('created_at DESC').page(params[:page]).per(10)
+    end
 
     respond_to do |format|
       format.html # index.html.erb

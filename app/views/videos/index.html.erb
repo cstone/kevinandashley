@@ -1,4 +1,9 @@
-<h3>Videos</h3>
+<% if params[:tag] %>
+    <h3>Videos tagged with <%= params[:tag] %></h3>
+<% else %>
+    <h3>Videos</h3>
+<% end %>
+
 
 <% @videos.each do |video| %>
     <h4><%= link_to video.title, video %></h4>

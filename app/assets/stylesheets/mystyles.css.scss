@@ -72,6 +72,11 @@ a:hover, a:focus {
   /*background-color:#F0F0F0;*/
   background-color: $white;
   color: $black;
+
+  h3{
+    border-bottom: 1px solid $light-gray;
+    padding-bottom: 5px;
+  }
 }
 
 .toploginnav {

@@ -1,5 +1,6 @@
 class Article < ActiveRecord::Base
-  attr_accessible :article_image, :body, :published_at, :title
+  attr_accessible :article_image, :body, :published_at, :title, :tag_list
+  acts_as_taggable
 
   scope :published, where('published_at < ?', DateTime.now).order('created_at DESC')
   scope :draft, lambda { where(published: false) }

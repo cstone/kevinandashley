@@ -1,3 +1,9 @@
+<% if params[:tag] %>
+    <p><%= link_to 'Back to all articles', blog_path, class: 'btn btn-danger btn-sm' %></p>
+    <h3>Articles tagged with <%= params[:tag] %></h3>
+<% else %>
+    <h3>Articles</h3>
+<% end %>
 <% @articles.each do |article| %>
     <h4><%= link_to_unless_current article.title, article %></h4>
     Posted <%= time_ago_in_words(article.created_at) %> ago  in

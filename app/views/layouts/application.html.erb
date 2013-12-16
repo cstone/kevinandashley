@@ -43,6 +43,12 @@
             <%= render(:partial => 'layouts/structure/mainphoto')  %>
         <% end %>
         <%= yield %>
+        Params
+        <%= debug params %>
+        Next Show
+        <%= debug @next_show %>
+        Show
+        <%= debug @show %>
       </div>
 
 
@@ -64,11 +70,17 @@
       -------------------------------------------------
       ------------------------------------------------>
       <div class="col-md-3">
-        <div class="row text-center">
-          <img src="https://storage.googleapis.com/support-kms-prod/SNP_2922347_en_v0" alt="" height="auto">
+        <div class="row sidebox">
+          <%= render 'layouts/structure/next-show' %>
         </div>
-        <div class="row">
+        <div class="row text-center">
+          <%= render 'layouts/structure/googleads/rightphotoad' %>
+        </div>
+        <div class="row whitebox">
           <%= render 'layouts/structure/upcoming-events' %>
+        </div>
+        <div class="row text-center">
+          <%= render 'layouts/structure/googleads/righttextad' %>
         </div>
 
       </div>

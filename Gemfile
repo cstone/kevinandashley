@@ -13,6 +13,7 @@ gem 'punching_bag'
 gem 'rmagick', '~>2.13.2', :require => 'RMagick'
 gem 'contact_us', '~> 0.4.0'
 gem 'kaminari'
+gem 'acts-as-taggable-on'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

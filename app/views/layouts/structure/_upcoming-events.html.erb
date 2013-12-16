@@ -1,10 +1,8 @@
 <% if !@upcoming_events.empty? %>
     <h4>Upcoming Events</h4>
-    <div class="row">
       <ul class="list-group">
         <% @upcoming_events.each do |event| %>
             <li class="my-list-item"><%= link_to truncate(event.title, :length => 40), event %> <br/><%= link_to event.date.strftime("%m/%d/%Y"), event %> at <%= link_to event.time.strftime("%I:%M %p"), event %> </li>
         <% end %>
       </ul>
-    </div>
 <% end %>

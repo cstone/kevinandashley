@@ -1,7 +1,10 @@
+<p class="text-right"><%= link_to 'Back to all shows', shows_path, class: 'btn btn-danger btn-sm' %></p>
 <h3><%= @show.topic %></h3>
 <p><%= @show.date.strftime("%m/%d/%Y") %> at <%= @show.time.strftime("%I:%M %p") %></p>
 <p><%= @show.description %></p>
-<p>&nbsp;</p>
+<div class="sidebox">
+  <p>Tags: <%= raw @show.tag_list.map { |t| link_to t, showtag_path(t) }.join(', ') %></p>
+</div>
 
 <table width="80%" class="table table-striped">
   <tr>

@@ -1,5 +1,7 @@
+<p class="text-right"><%= link_to 'Back to all articles', blog_path, class: 'btn btn-danger btn-sm' %></p>
 <h3><%= @article.title %></h3>
 <p>Posted <%= time_ago_in_words(@article.created_at) %> ago</p>
 <p><%= simple_format(@article.body) %></p>
+<p>Tags: <%= raw @article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></p>
 <hr>
 <%= render 'layouts/structure/disqus' %>

@@ -2,7 +2,11 @@ class ShowsController < ApplicationController
   # GET /shows
   # GET /shows.json
   def index
-    @shows = Show.page(params[:page]).per(25)
+    if params[:tag]
+      @shows = Show.tagged_with(params[:tag]).order(:date, :time).page(params[:page]).per(25)
+    else
+      @shows = Show.order(:date, :time).page(params[:page]).per(25)
+    end
 
     respond_to do |format|
       format.html # index.html.erb
@@ -80,4 +84,5 @@ class ShowsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
 end

@@ -1,7 +1,9 @@
-
+<p class="text-right"><%= link_to 'Back to all events', events_path, class: 'btn btn-danger btn-sm' %></p>
 <h3><%= @event.title %></h3>
 <p><%= @event.date.strftime("%m/%d/%Y") %> at <%= @event.time.strftime("%I:%M %p") %></p>
 <p><%= @event.description %></p>
+<p>Tags: <%= raw @event.tag_list.map { |t| link_to t, eventtag_path(t) }.join(', ') %></p>
+
 <p>&nbsp;</p>
 
 <table width="80%" class="table table-striped">

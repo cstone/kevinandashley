@@ -7,6 +7,11 @@ Kevinandashley::Application.routes.draw do
 
   get "blog/index"
 
+  get 'blogtags/:tag', to: 'blog#index', as: :tag
+  get 'showtags/:tag', to: 'shows#index', as: :showtag
+  get 'eventtags/:tag', to: 'events#index', as: :eventtag
+  get 'videotags/:tag', to: 'videos#index', as: :videotag
+
   resources :articles
 
 
