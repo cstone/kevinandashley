@@ -1,9 +1,8 @@
 <% if !@next_shows.empty? %>
     <% @next_shows.each do |show| %>
-        <h4>Next Show: <%= show.date.strftime("%m/%d/%Y") %></h4>
+        <p><strong>Next Show:</strong></p>
+        <p><%= link_to show.date.strftime("%m/%d/%Y"), show %> at <%= link_to show.time.strftime("%I:%M %p"), show %></p>
         <p>Topic: <%= link_to truncate(show.topic, :length => 40), show %> </p>
         <p><%= truncate(show.description, :length => 100) %></p>
-        <hr>
-        <p><%= link_to show.date.strftime("%m/%d/%Y"), show %> at <%= link_to show.time.strftime("%I:%M %p"), show %></p>
     <% end %>
 <% end %>

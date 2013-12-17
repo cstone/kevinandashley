@@ -1,5 +1,5 @@
 <% if params[:tag] %>
-    <p><%= link_to 'Back to all articles', blog_path, class: 'btn btn-danger btn-sm' %></p>
+    <p class="text-right"><%= link_to 'Back to all articles', blog_path, class: 'btn btn-danger btn-sm' %></p>
     <h3>Articles tagged with <%= params[:tag] %></h3>
 <% else %>
     <h3>Articles</h3>

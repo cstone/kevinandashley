@@ -1,4 +1,5 @@
 <% if params[:tag] %>
+    <p class="text-right"><%= link_to 'Back to all videos', videos_path, class: 'btn btn-danger btn-sm' %></p>
     <h3>Videos tagged with <%= params[:tag] %></h3>
 <% else %>
     <h3>Videos</h3>

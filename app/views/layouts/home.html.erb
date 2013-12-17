@@ -7,6 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <!-----------------------------------------------
 -------------------------------------------------
@@ -45,6 +53,9 @@
       -------------------------------------------------
       ------------------------------------------------>
       <div class="col-md-9" >
+        <div class="row sidebox">
+          <%= render 'layouts/structure/next-show' %>
+        </div>
         <%= yield %>
       </div>
 
@@ -67,14 +78,11 @@
       -------------------------------------------------
       ------------------------------------------------>
       <div class="col-md-3">
-        <div class="row sidebox">
-          <%= render 'layouts/structure/next-show' %>
+        <div class="row whitebox">
+          <%= render 'layouts/structure/side-facebook' %>
         </div>
         <div class="row text-center">
-          <img src="https://storage.googleapis.com/support-kms-prod/SNP_2922347_en_v0" alt="" height="auto">
-        </div>
-        <div class="row">
-          <%= render 'layouts/structure/upcoming-events' %>
+          <%= render 'layouts/structure/googleads/rightphotoad' %>
         </div>
       </div>
       <!-----------------------------------------------
