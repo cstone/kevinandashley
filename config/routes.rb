@@ -1,4 +1,6 @@
 Kevinandashley::Application.routes.draw do
+  get "photos/index"
+
   resources :shows
 
   resources :videos
