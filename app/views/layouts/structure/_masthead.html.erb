@@ -15,12 +15,8 @@
         <li class="dropdown <%= is_active?('/pages/about-the-show') %> <%= is_active?('/pages/about-ista') %>">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li class="<%= is_active?('/pages/about-the-show') %>">
-              <%= link_to 'About The Show', '/pages/about-the-show' %>
-            </li>
-            <li class="<%= is_active?('/pages/about-ista') %>">
-              <%= link_to 'About ISTA', '/pages/about-ista' %>
-            </li>
+            <li><%= active_link_to 'About The Show', '/pages/about-the-show' %></li>
+            <li><%= active_link_to 'About ISTA', '/pages/about-ista' %></li>
           </ul>
         </li>
         <li class="dropdown <%= is_active?('/pages/about-ashley') %> <%= is_active?('/pages/about-kevin') %>">

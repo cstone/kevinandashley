@@ -7,6 +7,7 @@ class Article < ActiveRecord::Base
   scope :featured, lambda { where(featured: true)}
   scope :active, where('published_at != NULL')
   scope :recent, published.order(:created_at).limit(5)
+  scope :home_featured, published.order(:created_at).limit(3)
 
 
 
