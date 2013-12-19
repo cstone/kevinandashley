@@ -1,4 +1,6 @@
 Kevinandashley::Application.routes.draw do
+  devise_for :users
+
   get "photos/index"
 
   resources :shows

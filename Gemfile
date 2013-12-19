@@ -12,6 +12,9 @@ gem 'acts-as-taggable-on'
 gem 'rmagick', '~>2.13.2', :require => 'RMagick'
 gem 'contact_us', '~> 0.4.0'
 gem 'acts-as-taggable-on'
+gem 'devise'
+
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
