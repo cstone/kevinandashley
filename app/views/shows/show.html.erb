@@ -21,6 +21,9 @@
         <td><%= @show.guest %></td>
       </tr>
   <% end %>
+  <tr>
+    <td><%= image_tag @show.guest_image.to_s %></td>
+  </tr>
 </table>
 <hr>
 <%= render 'layouts/structure/disqus' %>

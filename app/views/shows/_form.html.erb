@@ -1,4 +1,4 @@
-<%= simple_form_for(@show) do |f| %>
+<%= simple_form_for(@show, :html => {:multipart => true}) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
@@ -9,7 +9,7 @@
     <%= f.input :tag_list %>
     <%= f.input :url %>
     <%= f.input :guest %>
-    <%= f.input :guest_image %>
+    <%= f.file_field :guest_image %>
   </div>
 
   <div class="form-actions">

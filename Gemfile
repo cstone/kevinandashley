@@ -13,6 +13,11 @@ gem 'rmagick', '~>2.13.2', :require => 'RMagick'
 gem 'contact_us', '~> 0.4.0'
 gem 'acts-as-taggable-on'
 gem 'devise'
+gem 'rmagick', '~>2.13.2', :require => 'RMagick'
+gem 'carrierwave'
+gem 'rails_admin'
+gem 'fog'
+gem 'figaro'
 
 
 

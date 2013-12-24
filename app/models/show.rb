@@ -1,6 +1,7 @@
 class Show < ActiveRecord::Base
   attr_accessible :date, :description, :guest, :guest_image, :time, :topic, :url, :tag_list
   acts_as_taggable
+  mount_uploader :guest_image, ShowGuestImageUploader
 
   default_scope order(:date, :time)
 

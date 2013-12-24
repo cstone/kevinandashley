@@ -2,20 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55e350b4-c094-488f-8569-4489d81cfad7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20131218160548_devise_create_users.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/locales/devise.en.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/user_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/users.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/show/guest_image/8/0c5d4becfac611e19a5322000a1d0353_7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/show/guest_image/9/6e3d71ea270a11e3ae2122000ae90612_7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/show/guest_image/7/76adb4940dbf11e28ac522000a1d0104_7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/tmp/1387812745-5064-3755/76adb4940dbf11e28ac522000a1d0104_7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20131220040636_add_is_admin_to_users.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20131220042428_set_default_for_users.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20131220044946_create_rails_admin_histories_table.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20131223031748_add_guest_image_to_shows.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/carrierwave.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/rails_admin.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/uploaders/show_guest_image_uploader.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/structure/_next-show.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/structure/_next-show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/home.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/home.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shows/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/shows/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/kevinandashley.iml" afterPath="$PROJECT_DIR$/.idea/kevinandashley.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shows/show.html.erb" afterPath="$PROJECT_DIR$/app/views/shows/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/show.rb" afterPath="$PROJECT_DIR$/app/models/show.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kevinandashley.iws" />
@@ -30,11 +39,11 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/kevinandashley@routes__kevinandashley.coverage" NAME="routes: kevinandashley Coverage Results" MODIFIED="1387306974921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="kevinandashley" />
     <SUITE FILE_PATH="coverage/kevinandashley@db_drop__kevinandashley.coverage" NAME="db:drop: kevinandashley Coverage Results" MODIFIED="1386655162376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="kevinandashley" />
-    <SUITE FILE_PATH="coverage/kevinandashley@Development__kevinandashley.coverage" NAME="Development: kevinandashley Coverage Results" MODIFIED="1387384370756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="kevinandashley" />
-    <SUITE FILE_PATH="coverage/kevinandashley@db_migrate__kevinandashley.coverage" NAME="db:migrate: kevinandashley Coverage Results" MODIFIED="1387382856921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="kevinandashley" />
-    <SUITE FILE_PATH="coverage/kevinandashley@db_rollback__kevinandashley.coverage" NAME="db:rollback: kevinandashley Coverage Results" MODIFIED="1386654798579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="kevinandashley" />
-    <SUITE FILE_PATH="coverage/kevinandashley@contact_us_install__kevinandashley.coverage" NAME="contact_us:install: kevinandashley Coverage Results" MODIFIED="1386881890138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="kevinandashley" />
+    <SUITE FILE_PATH="coverage/kevinandashley@Development__kevinandashley.coverage" NAME="Development: kevinandashley Coverage Results" MODIFIED="1387915301974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="kevinandashley" />
+    <SUITE FILE_PATH="coverage/kevinandashley@db_migrate__kevinandashley.coverage" NAME="db:migrate: kevinandashley Coverage Results" MODIFIED="1387769332955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="kevinandashley" />
     <SUITE FILE_PATH="coverage/kevinandashley@contact_us_copy_views__kevinandashley.coverage" NAME="contact_us:copy_views: kevinandashley Coverage Results" MODIFIED="1387218395833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="kevinandashley" />
+    <SUITE FILE_PATH="coverage/kevinandashley@contact_us_install__kevinandashley.coverage" NAME="contact_us:install: kevinandashley Coverage Results" MODIFIED="1386881890138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="kevinandashley" />
+    <SUITE FILE_PATH="coverage/kevinandashley@db_rollback__kevinandashley.coverage" NAME="db:rollback: kevinandashley Coverage Results" MODIFIED="1386654798579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="kevinandashley" />
     <SUITE FILE_PATH="coverage/kevinandashley@db_setup__kevinandashley.coverage" NAME="db:setup: kevinandashley Coverage Results" MODIFIED="1386655860588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="kevinandashley" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -49,20 +58,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="article.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/article.rb">
+      <file leaf-file-name="show_guest_image_uploader.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/uploaders/show_guest_image_uploader.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="60" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="612">
+            <state line="31" column="36" selection-start="1038" selection-end="1038" vertical-scroll-proportion="1.3617572" vertical-offset="0" max-vertical-offset="1054">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/shows/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="329" selection-end="329" vertical-scroll-proportion="0.66233766" vertical-offset="0" max-vertical-offset="1054">
-              <folding />
+            <state line="24" column="39" selection-start="841" selection-end="841" vertical-scroll-proportion="-10.192307" vertical-offset="143" max-vertical-offset="578">
+              <folding>
+                <marker date="1387902793161" expanded="true" signature="313:347" placeholder="{ ... }" />
+                <marker date="1387902793161" expanded="true" signature="657:791" placeholder="if ... end" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,25 +94,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Devise" />
+        <entry key="$PROJECT_DIR$" value="Carrierwave" />
       </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/articles_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/blog_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/structure/_mainphoto.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/structure/_recent-events.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/structure/_disqus-comments.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/structure/_disqus.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/structure/_upcoming-events.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/structure/googleads/_righttextad.html.erb" />
         <option value="$PROJECT_DIR$/app/views/articles/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shows/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/show.rb" />
         <option value="$PROJECT_DIR$/app/views/shows/withtag.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/shows_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
@@ -110,7 +111,6 @@
         <option value="$PROJECT_DIR$/app/models/video.rb" />
         <option value="$PROJECT_DIR$/app/controllers/videos_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/videos/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shows/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/events/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/contact_us/contacts/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/contact_us/contacts/new_simple_form.html.erb" />
@@ -130,7 +130,6 @@
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/structure/_home-articles.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20131218015628_remove_article_image_from_articles.rb" />
-        <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/schema_statements.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131218020554_remove_event_image_from_events.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131218021532_remove_guest_image_from_shows.rb" />
@@ -139,7 +138,20 @@
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/home.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/structure/_next-show.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20131219031247_remove_active_admin_comments.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20131219032034_remove_admin_users.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20131220012602_remove_active_admin_comments.rb" />
+        <option value="$PROJECT_DIR$/db/schema.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20131220042428_set_default_for_users.rb" />
+        <option value="$PROJECT_DIR$/config/initializers/rails_admin.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/models/show.rb" />
+        <option value="$PROJECT_DIR$/app/views/shows/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shows/show.html.erb" />
+        <option value="$PROJECT_DIR$/config/initializers/carrierwave.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/application.yml" />
+        <option value="$PROJECT_DIR$/app/uploaders/show_guest_image_uploader.rb" />
       </list>
     </option>
   </component>
@@ -201,86 +213,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kevinandashley" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kevinandashley" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kevinandashley" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kevinandashley" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kevinandashley" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kevinandashley" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="structure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kevinandashley" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kevinandashley" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -289,7 +221,7 @@
   <component name="PropertiesComponent">
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../foodie/app/views/contact_us/contacts/new_simple_form.html.erb" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../foodie/config/application.yml" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="FullScreen" value="false" />
@@ -620,21 +552,24 @@
       <created>1387343017033</created>
       <updated>1387343017033</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Remove Rails Admin User">
+      <created>1387501780971</created>
+      <updated>1387501780971</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3251634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26510575" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27643505" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -644,6 +579,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -675,7 +611,9 @@
     <MESSAGE value="Add Photos&#10;" />
     <MESSAGE value="Add events partial to home page" />
     <MESSAGE value="Update Gem File" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Gem File" />
+    <MESSAGE value="Remove Rails Admin User" />
+    <MESSAGE value="Add Carrierwave" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Carrierwave" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -683,86 +621,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131215185353_acts_as_taggable_on_migration.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="402" selection-end="402" vertical-scroll-proportion="0.5770235" vertical-offset="0" max-vertical-offset="612" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shows/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="28" selection-start="232" selection-end="232" vertical-scroll-proportion="0.3809524" vertical-offset="0" max-vertical-offset="408" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/event.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="18" selection-start="174" selection-end="174" vertical-scroll-proportion="0.09392265" vertical-offset="0" max-vertical-offset="362" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/articles/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="221" selection-end="245" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="357" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/video.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="18" selection-start="119" selection-end="119" vertical-scroll-proportion="0.08877285" vertical-offset="0" max-vertical-offset="383" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/events_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="2" selection-start="96" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1581" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/videos_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1581" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/events/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="28" selection-start="456" selection-end="485" vertical-scroll-proportion="0.8095238" vertical-offset="0" max-vertical-offset="459" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/videos/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="28" selection-start="210" selection-end="210" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="357" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/articles/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/shows_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="16" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1598" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/events/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="60" selection-start="193" selection-end="193" vertical-scroll-proportion="0.09883721" vertical-offset="0" max-vertical-offset="578" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../foodie/app/views/contact_us/contacts/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.2261904" vertical-offset="412" max-vertical-offset="748" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/contact_us/contacts/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="31" selection-start="31" selection-end="31" vertical-scroll-proportion="15.038462" vertical-offset="391" max-vertical-offset="748" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/contact_us/contacts/new_simple_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="539" selection-start="572" selection-end="572" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="255" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../foodie/app/views/contact_us/contacts/new_simple_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="62" selection-start="1163" selection-end="1178" vertical-scroll-proportion="0.39534885" vertical-offset="0" max-vertical-offset="344" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/videos/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="0.2631579" vertical-offset="0" max-vertical-offset="323" />
@@ -778,11 +636,6 @@
         <state line="4" column="0" selection-start="245" selection-end="266" vertical-scroll-proportion="0.1904762" vertical-offset="0" max-vertical-offset="357" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shows/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="253" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="527" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/videos/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="110" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="442" />
@@ -790,9 +643,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="57" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
-          <folding />
-        </state>
+        <state line="12" column="57" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shows/index.html.erb">
@@ -860,11 +711,6 @@
         <state line="9" column="0" selection-start="224" selection-end="558" vertical-scroll-proportion="0.30267063" vertical-offset="51" max-vertical-offset="2839" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/show.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131218015628_remove_article_image_from_articles.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="4" selection-start="76" selection-end="124" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255" />
@@ -885,46 +731,14 @@
         <state line="5" column="10" selection-start="132" selection-end="132" vertical-scroll-proportion="0.22135417" vertical-offset="0" max-vertical-offset="384" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="794" selection-end="794" vertical-scroll-proportion="-1.0997305" vertical-offset="646" max-vertical-offset="1547">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/article.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="60" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/structure/_next-show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="34" selection-start="250" selection-end="250" vertical-scroll-proportion="0.15692307" vertical-offset="0" max-vertical-offset="325">
-          <folding />
-        </state>
+        <state line="3" column="34" selection-start="250" selection-end="250" vertical-scroll-proportion="0.15692307" vertical-offset="0" max-vertical-offset="325" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="4399" selection-end="4399" vertical-scroll-proportion="0.43384615" vertical-offset="1117" max-vertical-offset="3026">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="364">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131218160548_devise_create_users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="12" selection-start="62" selection-end="62" vertical-scroll-proportion="0.044155844" vertical-offset="0" max-vertical-offset="816">
-          <folding />
-        </state>
+        <state line="74" column="0" selection-start="4399" selection-end="4399" vertical-scroll-proportion="0.43384615" vertical-offset="1117" max-vertical-offset="3026" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
@@ -936,16 +750,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="74" selection-start="2564" selection-end="2564" vertical-scroll-proportion="0.7350649" vertical-offset="856" max-vertical-offset="1275">
-          <folding />
-        </state>
+        <state line="67" column="74" selection-start="2564" selection-end="2564" vertical-scroll-proportion="0.7350649" vertical-offset="856" max-vertical-offset="1275" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="74" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.7350649" vertical-offset="346" max-vertical-offset="765">
-          <folding />
-        </state>
+        <state line="37" column="74" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.7350649" vertical-offset="346" max-vertical-offset="765" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
@@ -955,9 +765,164 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131211061211_create_videos.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="366" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131218160548_devise_create_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="12" selection-start="62" selection-end="62" vertical-scroll-proportion="-0.5374677" vertical-offset="225" max-vertical-offset="816" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131220042428_set_default_for_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="47" selection-start="244" selection-end="270" vertical-scroll-proportion="0.3090909" vertical-offset="0" max-vertical-offset="385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131220040636_add_is_admin_to_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="12" selection-start="62" selection-end="62" vertical-scroll-proportion="0.044155844" vertical-offset="0" max-vertical-offset="385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="387">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="0" selection-start="1743" selection-end="1743" vertical-scroll-proportion="-1.4545455" vertical-offset="1394" max-vertical-offset="2091">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="84" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131220044946_create_rails_admin_histories_table.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="14" selection-start="77" selection-end="77" vertical-scroll-proportion="0.044155844" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/rails_admin.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="3" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3774">
+          <folding>
+            <marker date="1387515705325" expanded="true" signature="-1:-1" placeholder="#..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131223031748_add_guest_image_to_shows.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="12" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shows/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="20" selection-start="334" selection-end="334" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/show.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="53" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shows/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="39" selection-start="841" selection-end="841" vertical-scroll-proportion="-10.192307" vertical-offset="143" max-vertical-offset="578">
+          <folding>
+            <marker date="1387902793161" expanded="true" signature="313:347" placeholder="{ ... }" />
+            <marker date="1387902793161" expanded="true" signature="657:791" placeholder="if ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../foodie/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../foodie/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="300" selection-end="312" vertical-scroll-proportion="0.62637365" vertical-offset="10" max-vertical-offset="1122">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../foodie/config/initializers/carrierwave.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="558" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="364">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../foodie/config/environment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="364">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../foodie/config/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="382" selection-end="520" vertical-scroll-proportion="0.60714287" vertical-offset="0" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="63" selection-start="372" selection-end="372" vertical-scroll-proportion="0.42032966" vertical-offset="0" max-vertical-offset="364">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/carrierwave.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="3" selection-start="558" selection-end="558" vertical-scroll-proportion="0.39740258" vertical-offset="0" max-vertical-offset="385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="329" selection-end="329" vertical-scroll-proportion="0.66233766" vertical-offset="0" max-vertical-offset="1054">
+        <state line="15" column="48" selection-start="377" selection-end="377" vertical-scroll-proportion="0.66233766" vertical-offset="0" max-vertical-offset="1139">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/article.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="60" selection-start="478" selection-end="478" vertical-scroll-proportion="0.38961038" vertical-offset="3" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/uploaders/show_guest_image_uploader.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="36" selection-start="1038" selection-end="1038" vertical-scroll-proportion="1.3617572" vertical-offset="0" max-vertical-offset="1054">
           <folding />
         </state>
       </provider>
