@@ -53,25 +53,28 @@
       -------------------------------------------------
       ------------------------------------------------>
       <div class="col-md-9" >
-        <div class="row sidebox">
-          <% if !@next_shows.empty? %>
+        <div class="row">
+          <h4>Welcome to the ISTA Entertainment Spotlight</h4>
+        </div>
+        <% if !@next_shows.empty? %>
+            <div class="row sidebox">
               <% @next_shows.each do |show| %>
                   <p><strong>Next Show:</strong> <%= link_to show.date.strftime("%m/%d/%Y"), show %> at <%= link_to show.time.strftime("%I:%M %p"), show %></p>
                   <p><strong>Topic:</strong> <%= link_to truncate(show.topic, :length => 40), show %> </p>
               <% end %>
-          <% end %>
-        </div>
+            </div>
+        <% end %>
         <div class="row">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non dignissim ligula. Pellentesque mattis, est eu lobortis condimentum, neque augue bibendum libero, eu placerat arcu quam in lacus. Duis id porta est. Maecenas pharetra, magna ultricies sodales interdum, metus felis rutrum tortor, et cursus tortor sem eu dolor. Maecenas sed purus eu sapien dictum auctor in sit amet lectus. Suspendisse malesuada eget turpis vel mattis. Donec lectus ligula, pellentesque sit amet porttitor sit amet, dictum eu nibh. Nam gravida enim enim. Pellentesque a quam in mauris sagittis pharetra. Maecenas id lectus a dui convallis ornare. Fusce faucibus nisi non facilisis placerat. Fusce porttitor lectus vel tincidunt vestibulum.
-        </p>
-        <p>
-          Nulla accumsan aliquam arcu. Cras vel tempus diam. Quisque et fermentum enim. Ut convallis scelerisque est vitae rutrum. Maecenas ut velit tristique, blandit erat ac, pharetra risus. Nullam non sollicitudin elit, dictum viverra nisl. Vestibulum posuere, ipsum in tincidunt sodales, turpis ipsum condimentum justo, sed convallis ipsum nisi quis tellus. Duis quis felis nisi. Cras nec dui eget nisi tincidunt tempus. Maecenas in ultricies velit. Fusce orci urna, rhoncus tempus interdum eget, pellentesque eu ante. Curabitur in odio mi. Nulla eu felis velit. Fusce vel dolor egestas, hendrerit neque at, adipiscing dolor. Nam nec nunc tortor.
-        </p>
-        <p>
-          Morbi justo diam, iaculis vel pulvinar vitae, mollis at sapien. Fusce a turpis quis risus pellentesque viverra. Suspendisse quam est, pharetra sed sapien at, rutrum eleifend arcu. Maecenas eget porta nibh. Proin in dui eu felis egestas elementum quis et nulla. Morbi ornare, elit quis vehicula commodo, mauris magna varius libero, in lacinia nisl justo in augue. Donec et malesuada diam, eget pharetra dolor. Duis tristique augue massa, at malesuada velit adipiscing non. Curabitur convallis fermentum nulla, a euismod sapien euismod eget.
-        </p>
-          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non dignissim ligula. Pellentesque mattis, est eu lobortis condimentum, neque augue bibendum libero, eu placerat arcu quam in lacus. Duis id porta est. Maecenas pharetra, magna ultricies sodales interdum, metus felis rutrum tortor, et cursus tortor sem eu dolor. Maecenas sed purus eu sapien dictum auctor in sit amet lectus. Suspendisse malesuada eget turpis vel mattis. Donec lectus ligula, pellentesque sit amet porttitor sit amet, dictum eu nibh. Nam gravida enim enim. Pellentesque a quam in mauris sagittis pharetra. Maecenas id lectus a dui convallis ornare. Fusce faucibus nisi non facilisis placerat. Fusce porttitor lectus vel tincidunt vestibulum.
+          </p>
+          <p>
+            Nulla accumsan aliquam arcu. Cras vel tempus diam. Quisque et fermentum enim. Ut convallis scelerisque est vitae rutrum. Maecenas ut velit tristique, blandit erat ac, pharetra risus. Nullam non sollicitudin elit, dictum viverra nisl. Vestibulum posuere, ipsum in tincidunt sodales, turpis ipsum condimentum justo, sed convallis ipsum nisi quis tellus. Duis quis felis nisi. Cras nec dui eget nisi tincidunt tempus. Maecenas in ultricies velit. Fusce orci urna, rhoncus tempus interdum eget, pellentesque eu ante. Curabitur in odio mi. Nulla eu felis velit. Fusce vel dolor egestas, hendrerit neque at, adipiscing dolor. Nam nec nunc tortor.
+          </p>
+          <p>
+            Morbi justo diam, iaculis vel pulvinar vitae, mollis at sapien. Fusce a turpis quis risus pellentesque viverra. Suspendisse quam est, pharetra sed sapien at, rutrum eleifend arcu. Maecenas eget porta nibh. Proin in dui eu felis egestas elementum quis et nulla. Morbi ornare, elit quis vehicula commodo, mauris magna varius libero, in lacinia nisl justo in augue. Donec et malesuada diam, eget pharetra dolor. Duis tristique augue massa, at malesuada velit adipiscing non. Curabitur convallis fermentum nulla, a euismod sapien euismod eget.
+          </p>
+        </div>
         <div class="row">
           <div class="col-md-6 whitebox">
             <%= render 'layouts/structure/home-articles' %>

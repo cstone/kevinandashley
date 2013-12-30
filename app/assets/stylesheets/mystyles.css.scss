@@ -74,6 +74,13 @@ a:hover, a:focus {
   max-width: 100%;
 }
 
+.img-float-right {
+  float:right;
+  margin:0 0 10px 10px;
+  border: 1px solid $light-gray;
+  padding: 2px;
+}
+
 .photo-centered {
   margin: auto;
   max-width: 1170px;
