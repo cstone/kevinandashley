@@ -35,9 +35,7 @@
         <li class="<%= is_active?(events_path) %> <%= 'active' if controller_name == 'events' %>">
           <%= link_to 'Events', events_path %>
         </li>
-        <li class="<%= is_active?(photos_index_path) %> <%= 'active' if controller_name == 'photos' %>">
-          <%= link_to 'Photos', photos_index_path %>
-        </li>
+
         <li class="<%= is_active?(videos_path) %> <%= 'active' if controller_name == 'videos' %>">
           <%= link_to 'Videos', videos_path %>
         </li>

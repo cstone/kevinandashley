@@ -1,12 +1,13 @@
-<%= simple_form_for(@page, html: {multipart: true}) do |f| %>
-    <%= f.error_notification %>
+<%= semantic_form_for(@page, html: {multipart: true}) do |f| %>
 
-    <div class="form-group">
-      <%= f.input :title, class: 'form-control', placeholder: 'Enter the title for the page' %>
-      <%= f.input :permalink, class: 'form-control', placeholder: 'Enter the permalink for the url without spaces' %>
-      <%= f.input :body, class: 'form-control', placeholder: 'Enter the body content' %>
+    <%= f.inputs do %>
+      <%= f.input :title, :label => 'Title', placeholder: 'Enter the title for the page' %>
+      <%= f.input :permalink, placeholder: 'Enter the permalink for the url without spaces' %>
+      <%= f.input :body, :as => :ckeditor %>
       <%= f.file_field :page_image, label: 'Your username please' %>
       <%= f.input :active, label: 'Check if active' %>
-      <%= f.button :submit, class: 'btn btn-danger', value: 'Create New Page' %>
-    </div>
+     <% end %>
+    <%= f.actions do %>
+      <%= f.action :submit, :button_html => {:class => 'btn btn-danger'} %>
+    <% end %>
 <% end %>

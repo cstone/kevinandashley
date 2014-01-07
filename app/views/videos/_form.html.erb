@@ -1,15 +1,8 @@
-<%= simple_form_for(@video) do |f| %>
-  <%= f.error_notification %>
-
-  <div class="form-inputs">
+<%= semantic_form_for(@video) do |f| %>
     <%= f.input :title %>
-    <%= f.input :description %>
-    <%= f.input :source %>
+    <%= f.input :description, :as => :ckeditor %>
+    <%= f.input :source, label: 'Youtube source' %>
     <%= f.input :tag_list %>
     <%= f.input :active %>
-  </div>
-
-  <div class="form-actions">
     <%= f.button :submit %>
-  </div>
 <% end %>

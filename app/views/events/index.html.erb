@@ -5,20 +5,18 @@
     <h3>Upcoming Events</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique turpis at orci vestibulum, sit amet ultricies elit volutpat. Phasellus dapibus id urna at condimentum. Cras dignissim, lectus non viverra tristique, dui felis condimentum dolor, vitae porta elit odio non turpis. Suspendisse mollis lacus non felis consectetur, ac elementum nibh porttitor. Duis facilisis nisi eu risus dictum, a iaculis risus congue. Aliquam mattis interdum purus, ac interdum enim tincidunt vehicula. Curabitur egestas ut lectus eget cursus. </p>
 <% end %>
-<table class="table table-striped">
+<table width="100%" class="table table-striped">
   <thead>
   <tr>
-    <th>Date</th>
-    <th>Time</th>
-    <th>Event</th>
-    <th></th>
+    <th width="22%">Date/Time</th>
+    <th width="70%">Event</th>
+    <th width="8%"></th>
   </tr>
   </thead>
   <tbody>
   <% @events.each do |event| %>
       <tr>
-        <td><%= link_to event.date.strftime("%m/%d/%Y"), event %></td>
-        <td><%= link_to event.time.strftime("%I:%M %p"), event %></td>
+        <td><%= link_to event.start, event %></td>
         <td><%= link_to event.title, event %></td>
         <td><%= link_to 'More Info', event, class: 'btn btn-danger btn-sm' %></td>
       </tr>

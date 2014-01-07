@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 gem 'font-awesome-rails'
-gem 'simple_form'
 gem 'turbolinks'
 gem 'jquery-turbolinks'
 gem 'active_link_to'
@@ -15,9 +14,12 @@ gem 'acts-as-taggable-on'
 gem 'devise'
 gem 'rmagick', '~>2.13.2', :require => 'RMagick'
 gem 'carrierwave'
-gem 'rails_admin'
 gem 'fog'
 gem 'figaro'
+gem 'formtastic'
+gem 'activeadmin'
+gem 'ckeditor'
+gem 'mini_magick'
 
 
 

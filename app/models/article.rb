@@ -9,6 +9,8 @@ class Article < ActiveRecord::Base
   scope :recent, published.order(:created_at).limit(5)
   scope :home_featured, published.order(:created_at).limit(3)
 
+  after_create :set_published_time
+
 
 
   def to_param
@@ -19,10 +21,14 @@ class Article < ActiveRecord::Base
   def self.search(search)
     if search
       #find(:all, :conditions => ['title LIKE ?', "%#{search}%"])
-      where("title LIKE :search OR body LIKE :search", {:search => "%#{search}%"})
+      where('title LIKE :search OR body LIKE :search', {:search => "%#{search}%"})
     else
       find(:all)
     end
+  end
+
+  def set_published_time
+    self.published_at = DateTime.now
   end
 
 

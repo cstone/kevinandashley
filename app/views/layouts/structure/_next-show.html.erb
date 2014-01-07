@@ -1,7 +1,9 @@
 <% if !@next_shows.empty? %>
+    <div class="row sidebox">
     <% @next_shows.each do |show| %>
         <p><strong>Next Show:</strong> <%= link_to show.date.strftime("%m/%d/%Y"), show %> at <%= link_to show.time.strftime("%I:%M %p"), show %></p>
         <p><strong>Topic:</strong> <%= link_to truncate(show.topic, :length => 40), show %> </p>
         <p><%= truncate(show.description, :length => 100) %></p>
     <% end %>
+    </div>
 <% end %>

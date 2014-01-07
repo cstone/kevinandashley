@@ -9,7 +9,7 @@
 <% @videos.each do |video| %>
     <h4><%= link_to video.title, video %></h4>
     <p>Uploaded <%= time_ago_in_words(video.created_at) %> ago</p>
-    <p><%= truncate(video.description, :length => 250) %></p>
+    <p><%= simple_format truncate(video.description, :length => 250) %></p>
     <p><%= link_to 'Watch', video, class: 'btn btn-danger btn-sm' %></p>
     <hr>
 

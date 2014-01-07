@@ -3,9 +3,9 @@ class EventsController < ApplicationController
   # GET /events.json
   def index
     if params[:tag]
-      @events = Event.tagged_with(params[:tag]).where('date >= ?', Date.today).order(:date).page(params[:page]).per(25)
+      @events = Event.tagged_with(params[:tag]).where('start >= ?', Time.now).order(:start).page(params[:page]).per(25)
     else
-      @events = Event.where('date >= ?', Date.today).order(:date).page(params[:page]).per(25)
+      @events = Event.where('start >= ?', Time.now).order(:start).page(params[:page]).per(25)
     end
 
     respond_to do |format|

@@ -1,54 +1,42 @@
 <p class="text-right"><%= link_to 'Back to all events', events_path, class: 'btn btn-danger btn-sm' %></p>
 <h3><%= @event.title %></h3>
-<p><%= @event.date.strftime("%m/%d/%Y") %> at <%= @event.time.strftime("%I:%M %p") %></p>
-<p><%= @event.description %></p>
-<div class="sidebox">
-  <p>Tags: <%= raw @event.tag_list.map { |t| link_to t, eventtag_path(t) }.join(', ') %></p>
-</div>
-
 <table width="80%" class="table table-striped">
   <tr>
-    <td width="15%"><strong>Date:</strong></td>
-    <td width="85%"><%= @event.date.strftime("%m/%d/%Y") %></td>
-  </tr>
-  <tr>
-    <td><strong>Time:</strong></td>
-    <td><%= @event.time.strftime("%I:%M %p") %></td>
+    <td width="15%"><strong>When:</strong></td>
+    <td width="85%"><%= @event.start %></td>
   </tr>
   <% if !@event.venue.empty? %>
   <tr>
-    <td><strong>Venue:</strong></td>
+    <td><strong>Where:</strong></td>
     <td><%= @event.venue %></td>
   </tr>
   <% end %>
   <% if !@event.address.empty? %>
   <tr>
-    <td><strong>Address:</strong></td>
+    <td></td>
     <td><%= @event.address %></td>
   </tr>
-  <% end %>
-  <% if !@event.city.empty? %>
   <tr>
-    <td><strong>City:</strong></td>
-    <td><%= @event.city %></td>
+    <td></td>
+    <td><%= @event.city %>, <%= @event.state %> <%= @event.zip %></td>
   </tr>
   <% end %>
-  <% if !@event.state.empty? %>
-  <tr>
-    <td><strong>State:</strong></td>
-    <td><%= @event.state %></td>
-  </tr>
-  <% end %>
-  <% if !@event.zip.nil? %>
-  <tr>
-    <td><strong>Zip:</strong></td>
-    <td><%= @event.zip %></td>
-  </tr>
+  <% if !@event.description.empty? %>
+      <tr>
+        <td><strong>What:</strong></td>
+        <td><%= simple_format(@event.description) %></td>
+      </tr>
   <% end %>
   <% if !@event.url.empty? %>
   <tr>
     <td><strong>Website:</strong></td>
     <td><%= link_to @event.url, @event.url %></td>
+  </tr>
+  <% end %>
+  <% if !@event.tag_list.empty? %>
+  <tr>
+    <td><strong>Tags:</strong></td>
+    <td><%= raw @event.tag_list.map { |t| link_to t, eventtag_path(t) }.join(', ') %></td>
   </tr>
   <% end %>
 </table>
