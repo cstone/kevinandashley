@@ -20,7 +20,6 @@ gem 'formtastic'
 gem 'activeadmin'
 gem 'ckeditor'
 gem 'mini_magick'
-gem 'rails_12factor', group: :production
 
 
 
@@ -32,6 +31,7 @@ end
 
 group :production do
   gem 'pg'
+  gem 'rails_12factor'
 end
 
 # Gems used only for assets and not required
