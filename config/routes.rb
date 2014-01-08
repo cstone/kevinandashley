@@ -1,7 +1,5 @@
 Kevinandashley::Application.routes.draw do
-  
 
-  mount Ckeditor::Engine => '/ckeditor'
 
   devise_for :users
 
@@ -30,6 +28,8 @@ Kevinandashley::Application.routes.draw do
   match 'blog' => 'blog#index', :as => 'blog'
 
   root :to => 'home#index'
+
+  mount Ckeditor::Engine => '/ckeditor'
 
 
   # The priority is based upon order of creation:

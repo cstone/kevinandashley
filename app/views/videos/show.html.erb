@@ -2,8 +2,10 @@
 <p><%= simple_format(@video.description) %></p>
 <p>&nbsp;</p>
 <p><iframe width="560" height="315" src="//www.youtube.com/embed/<%= @video.source %>?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<% if !@video.tag_list.empty? %>
 <div class="sidebox">
   <p>Tags: <%= raw @video.tag_list.map { |t| link_to t, videotag_path(t) }.join(', ') %></p>
 </div>
+<% end %>
 <hr>
 <%= render 'layouts/structure/disqus' %>

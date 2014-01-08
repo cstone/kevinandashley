@@ -3,9 +3,9 @@ class VideosController < ApplicationController
   # GET /videos.json
   def index
     if params[:tag]
-      @videos = Video.tagged_with(params[:tag]).order('created_at DESC').page(params[:page]).per(10)
+      @videos = Video.active.tagged_with(params[:tag]).order('created_at DESC').page(params[:page]).per(10)
     else
-      @videos = Video.order('created_at DESC').page(params[:page]).per(10)
+      @videos = Video.active.order('created_at DESC').page(params[:page]).per(10)
     end
 
     respond_to do |format|

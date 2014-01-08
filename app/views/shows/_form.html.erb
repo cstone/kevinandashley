@@ -1,15 +1,14 @@
-<%= simple_form_for(@show, :html => {:multipart => true}) do |f| %>
-  <%= f.error_notification %>
-
-  <div class="form-inputs">
-    <%= f.input :topic %>
-    <%= f.input :date %>
-    <%= f.input :time %>
-    <%= f.input :description %>
-    <%= f.input :tag_list %>
-    <%= f.input :url %>
-    <%= f.input :guest %>
-    <%= f.file_field :guest_image %>
-    <%= f.button :submit %>
-  </div>
+<%= semantic_form_for(@show, :html => {:multipart => true}) do |f| %>
+    <%= f.inputs do %>
+        <%= f.input :topic %>
+        <%= f.input :start %>
+        <%= f.input :description, :as => :ckeditor %>
+        <%= f.input :tag_list %>
+        <%= f.input :url %>
+        <%= f.input :guest %>
+        <%= f.file_field :guest_image %>
+    <% end %>
+    <%= f.actions do %>
+        <%= f.button :submit %>
+    <% end %>
 <% end %>

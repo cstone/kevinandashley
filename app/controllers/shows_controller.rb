@@ -3,9 +3,9 @@ class ShowsController < ApplicationController
   # GET /shows.json
   def index
     if params[:tag]
-      @shows = Show.tagged_with(params[:tag]).order(:date, :time).page(params[:page]).per(25)
+      @shows = Show.tagged_with(params[:tag]).page(params[:page]).per(25)
     else
-      @shows = Show.order(:date, :time).page(params[:page]).per(25)
+      @shows = Show.page(params[:page]).per(25)
     end
 
     respond_to do |format|

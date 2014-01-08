@@ -1,34 +1,31 @@
 <p class="text-right"><%= link_to 'Back to all shows', shows_path, class: 'btn btn-danger btn-sm' %></p>
+<h3><%= @show.topic %></h3>
 <table width="100%" border="0" class="table table-hover">
   <tr>
-    <td  width="15%"><b>Show Topic:</b></td>
-    <td  width="85%"><%= @show.topic %></td>
-  </tr>
-  <tr>
-    <td><b>Date/Time:</b></td>
-    <td><%= @show.date.strftime("%m/%d/%Y") %> at <%= @show.time.strftime("%I:%M %p") %></td>
+    <td width="13%"><b>When:</b></td>
+    <td width="87%"><%= @show.start %></td>
   </tr>
   <tr>
     <td><b>Description:</b></td>
-    <td><%= @show.description %></td>
+    <td><%= simple_format @show.description %></td>
   </tr>
   <% if !@show.guest.empty? %>
-  <tr>
-    <td><b>Guest:</b></td>
-    <td><%= @show.guest %></td>
-  </tr>
+      <tr>
+        <td><b>Guest:</b></td>
+        <td><%= @show.guest %></td>
+      </tr>
   <% end %>
   <% if !@show.guest_image.to_s.empty? %>
-  <tr>
-    <td><b>Guest Image:</b></td>
-    <td><%= image_tag @show.guest_image.to_s %></td>
-  </tr>
+      <tr>
+        <td><b>Guest Image:</b></td>
+        <td><%= image_tag @show.guest_image.to_s %></td>
+      </tr>
   <% end %>
   <% if !@show.tag_list.empty? %>
-  <tr>
-    <td><b>Tags:</b></td>
-    <td><%= raw @show.tag_list.map { |t| link_to t, showtag_path(t) }.join(', ') %></td>
-  </tr>
+      <tr>
+        <td><b>Tags:</b></td>
+        <td><%= raw @show.tag_list.map { |t| link_to t, showtag_path(t) }.join(', ') %></td>
+      </tr>
   <% end %>
 </table>
 

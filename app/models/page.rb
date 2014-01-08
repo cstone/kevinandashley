@@ -1,5 +1,5 @@
 class Page < ActiveRecord::Base
-  attr_accessible :active, :body, :permalink, :title, :page_image
+  attr_accessible :active, :body, :permalink, :title, :page_image, :remove_image
   mount_uploader :page_image, PageImageUploader
 
 

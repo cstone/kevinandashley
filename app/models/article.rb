@@ -2,6 +2,8 @@ class Article < ActiveRecord::Base
   attr_accessible :article_image, :body, :published_at, :title, :tag_list
   acts_as_taggable
 
+  validates :title, length: { maximum: 60 }
+
   scope :published, where('published_at < ?', DateTime.now).order('created_at DESC')
   scope :draft, lambda { where(published: false) }
   scope :featured, lambda { where(featured: true)}

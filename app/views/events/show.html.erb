@@ -1,6 +1,6 @@
 <p class="text-right"><%= link_to 'Back to all events', events_path, class: 'btn btn-danger btn-sm' %></p>
 <h3><%= @event.title %></h3>
-<table width="80%" class="table table-striped">
+<table width="80%" class="table table-hover">
   <tr>
     <td width="15%"><strong>When:</strong></td>
     <td width="85%"><%= @event.start %></td>
@@ -23,7 +23,7 @@
   <% end %>
   <% if !@event.description.empty? %>
       <tr>
-        <td><strong>What:</strong></td>
+        <td><strong>Description:</strong></td>
         <td><%= simple_format(@event.description) %></td>
       </tr>
   <% end %>

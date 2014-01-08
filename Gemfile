@@ -20,6 +20,7 @@ gem 'formtastic'
 gem 'activeadmin'
 gem 'ckeditor'
 gem 'mini_magick'
+gem 'rails_12factor', group: :production
 
 
 

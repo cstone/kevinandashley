@@ -1,9 +1,8 @@
-<h3><%= t('.contact_us') %></h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique turpis at orci vestibulum, sit amet ultricies elit volutpat. Phasellus dapibus id urna at condimentum. Cras dignissim, lectus non viverra tristique, dui felis condimentum dolor, vitae porta elit odio non turpis. Suspendisse mollis lacus non felis consectetur, ac elementum nibh porttitor. Duis facilisis nisi eu risus dictum, a iaculis risus congue. Aliquam mattis interdum purus, ac interdum enim tincidunt vehicula. Curabitur egestas ut lectus eget cursus. </p>
+<h2><%= t('.contact_us') %></h2>
 <%= simple_form_for @contact, :url => contacts_path do |f| %>
   <%= f.input :name, :label => t('.name') if ContactUs.require_name %>
   <%= f.input :email, :label => t('.email') %>
   <%= f.input :subject, :label => t('.subject') if ContactUs.require_subject %>
   <%= f.input :message, :as => :text, :label => t('.message') %>
-  <%= f.button :submit, class: 'btn btn-danger btn-sm', value: 'Send', :label => t('.submit'), :button_html => { :alt => t('.submit'), :id => 'contact_us_contact_submit', :title => t('.submit') } %>
+  <%= f.button :submit, :label => t('.submit'), :button_html => { :alt => t('.submit'), :id => 'contact_us_contact_submit', :title => t('.submit') } %>
 <% end %>

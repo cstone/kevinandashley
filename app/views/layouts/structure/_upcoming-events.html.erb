@@ -1,0 +1,8 @@
+<% if !@upcoming_events.empty? %>
+    <h4>Upcoming Events</h4>
+    <ul class="list-group">
+      <% @upcoming_events.each do |event| %>
+          <li class="my-list-item"><%= link_to_unless_current event.event_title_start, event %></li>
+      <% end %>
+    </ul>
+<% end %>

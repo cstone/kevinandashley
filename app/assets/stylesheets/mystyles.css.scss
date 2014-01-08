@@ -17,6 +17,10 @@ $red: rgb(217, 83, 79);
 $red-hover: rgb(255, 255, 255);
 
 
+.formtastic li {
+  list-style-type: none;
+}
+
 
 body {
   margin: 90px 0 40px;
