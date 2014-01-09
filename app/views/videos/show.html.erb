@@ -1,4 +1,5 @@
 <h3><%= @video.title %></h3>
+<p>Uploaded <%= time_ago_in_words(@video.created_at) %> ago</p>
 <p><%= simple_format(@video.description) %></p>
 <p>&nbsp;</p>
 <p><iframe width="560" height="315" src="//www.youtube.com/embed/<%= @video.source %>?rel=0" frameborder="0" allowfullscreen></iframe></p>
@@ -7,5 +8,16 @@
   <p>Tags: <%= raw @video.tag_list.map { |t| link_to t, videotag_path(t) }.join(', ') %></p>
 </div>
 <% end %>
+<p>
+  <% if can? :update, @video %>
+      <%= link_to "Edit This Video", edit_video_path(@video), class: 'btn btn-danger btn-sm' %>
+  <% end %>
+  <% if can? :destroy, @video %>
+      <%= link_to "Delete This Video", @video, :method => :delete, :confirm => "Are you sure you want to delete this video?", class: 'btn btn-danger btn-sm' %>
+  <% end %>
+  <% if can? :create, @video %>
+      <%= link_to "Add New Video", new_video_path, class: 'btn btn-danger btn-sm' %>
+  <% end %>
+</p>
 <hr>
 <%= render 'layouts/structure/disqus' %>
