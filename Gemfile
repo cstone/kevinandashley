@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "1.9.3"
+ruby '1.9.3'
 
 gem 'rails', '3.2.13'
 gem 'font-awesome-rails'
@@ -32,7 +32,7 @@ end
 
 group :production do
   gem 'pg'
-  gem 'rails_12factor'
+  #gem 'rails_12factor'
 end
 
 # Gems used only for assets and not required
@@ -45,7 +45,7 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
-  gem 'turbo-sprockets-rails3'
+  #gem 'turbo-sprockets-rails3'
 end
 
 gem 'jquery-rails'
