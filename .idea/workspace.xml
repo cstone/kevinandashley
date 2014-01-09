@@ -2,12 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55e350b4-c094-488f-8569-4489d81cfad7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
+      <change type="DELETED" beforePath="C:\Users\Stone\RubymineProjects\kevinandashley\public\404.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Stone\RubymineProjects\kevinandashley\public\422.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Stone\RubymineProjects\kevinandashley\public\500.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Stone\RubymineProjects\kevinandashley\public\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Stone\RubymineProjects\kevinandashley\public\robots.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Stone\RubymineProjects\kevinandashley\public\uploads\ckeditor\pictures\1\01616_dEbW362yJHg_600x450.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Stone\RubymineProjects\kevinandashley\public\uploads\ckeditor\pictures\1\content_01616_dEbW362yJHg_600x450.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Stone\RubymineProjects\kevinandashley\public\uploads\ckeditor\pictures\1\thumb_01616_dEbW362yJHg_600x450.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Stone\RubymineProjects\kevinandashley\public\uploads\ckeditor\pictures\2\20130611_134317.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Stone\RubymineProjects\kevinandashley\public\uploads\ckeditor\pictures\2\content_20130611_134317.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Stone\RubymineProjects\kevinandashley\public\uploads\ckeditor\pictures\2\thumb_20130611_134317.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Stone\RubymineProjects\kevinandashley\public\uploads\show\guest_image\7\76adb4940dbf11e28ac522000a1d0104_7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Stone\RubymineProjects\kevinandashley\public\uploads\show\guest_image\8\0c5d4becfac611e19a5322000a1d0353_7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Stone\RubymineProjects\kevinandashley\public\uploads\show\guest_image\9\6e3d71ea270a11e3ae2122000ae90612_7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Stone\RubymineProjects\kevinandashley\public\uploads\tmp\1387812745-5064-3755\76adb4940dbf11e28ac522000a1d0104_7.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kevinandashley.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="public/" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,10 +107,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.6358974" vertical-offset="638" max-vertical-offset="1224">
+            <state line="65" column="3" selection-start="2939" selection-end="2939" vertical-scroll-proportion="0.0" vertical-offset="638" max-vertical-offset="1224">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="9" selection-start="500" selection-end="500" vertical-scroll-proportion="0.87533873" vertical-offset="0" max-vertical-offset="442">
               <folding />
             </state>
           </provider>
@@ -123,7 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
         <option value="$PROJECT_DIR$/app/views/layouts/structure/_masthead.html.erb" />
         <option value="$PROJECT_DIR$/config/locales/en.yml" />
@@ -174,6 +197,7 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -236,38 +260,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kevinandashley" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kevinandashley" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kevinandashley" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kevinandashley" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="environments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -275,7 +267,7 @@
   <component name="PropertiesComponent">
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../foodie/config/initializers/carrierwave.rb" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="FullScreen" value="false" />
@@ -635,7 +627,11 @@
       <created>1389225068843</created>
       <updated>1389225068843</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Update Gem File&#10;">
+      <created>1389226296775</created>
+      <updated>1389226296775</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -647,7 +643,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32026145" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32736155" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3267974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23489426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -720,7 +716,8 @@
     <MESSAGE value="Modified Controllers&#10;" />
     <MESSAGE value="Add Heroku Fix" />
     <MESSAGE value="Update Gem File" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Gem File" />
+    <MESSAGE value="Update Gem File&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Gem File&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -728,11 +725,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/initializers/wrap_parameters.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="389" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../foodie/config/initializers/remove-this-sf_bs3_inputs.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476" />
@@ -994,7 +986,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.6358974" vertical-offset="638" max-vertical-offset="1224">
+        <state line="65" column="3" selection-start="2939" selection-end="2939" vertical-scroll-proportion="0.0" vertical-offset="638" max-vertical-offset="1224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="9" selection-start="500" selection-end="500" vertical-scroll-proportion="0.87533873" vertical-offset="0" max-vertical-offset="442">
           <folding />
         </state>
       </provider>
