@@ -43,6 +43,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><%= link_to 'Facebook', 'https://www.facebook.com/ISTAEntertainmentSpotlight', target: 'blank' %></li>
+            <li><%= link_to 'Listen', '/pages/listenlive' %></li>
             <li class="<%= is_active?(contact_us_path) %>">
               <%= link_to 'Contact Us', contact_us_path %>
             </li>
@@ -50,7 +51,11 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><%= link_to 'Listen Live', '/pages/listenlive' %></li>
+        <% if user_signed_in? %>
+            <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+        <% else %>
+            <li><%= link_to 'Login', new_user_session_path %></li>
+        <% end %>
       </ul>
       <div class="navbar-collapse collapse">
       </div><!--/.navbar-collapse -->

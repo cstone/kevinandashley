@@ -5,15 +5,14 @@
   <p>Tags: <%= raw @article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></p>
 <hr>
 <p>
-  <% if can? :create, @article %>
-      <%= link_to "New Article", new_article_path, class: 'btn btn-danger btn-sm' %> |
-  <% end %>
   <% if can? :update, @article %>
-      <%= link_to "Edit", edit_article_path(@article), class: 'btn btn-danger btn-sm' %> |
+      <%= link_to "Edit This Article", edit_article_path(@article), class: 'btn btn-danger btn-sm' %>
   <% end %>
   <% if can? :destroy, @article %>
-      <%= link_to "Destroy", @article, :method => :delete, :confirm => "Are you sure you want to delete this article?", class: 'btn btn-danger btn-sm' %> |
+      <%= link_to "Delete This Article", @article, :method => :delete, :confirm => "Are you sure you want to delete this article?", class: 'btn btn-danger btn-sm' %>
   <% end %>
-  <%= link_to "Back to Articles", blog_path, class: 'btn btn-danger btn-sm' %>
+  <% if can? :create, @article %>
+      <%= link_to "Add New Article", new_article_path, class: 'btn btn-danger btn-sm' %>
+  <% end %>
 </p>
 <%= render 'layouts/structure/disqus' %>

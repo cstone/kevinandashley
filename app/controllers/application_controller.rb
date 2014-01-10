@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   before_filter :get_upcoming_events
   before_filter :get_next_shows
   before_filter :get_home_articles
+  before_filter :events, :home, :contact_us, :shows, :videos
 
   def get_upcoming_events
     @upcoming_events = Event.upcoming
@@ -16,4 +17,27 @@ class ApplicationController < ActionController::Base
   def get_home_articles
     @articles = Article.home_featured
   end
+
+
+  def home
+    @home_content = DynamicContent.get_value(:home)
+  end
+
+  def contact_us
+    @contact_us_content = DynamicContent.get_value(:contact_us)
+  end
+
+  def events
+    @events_content = DynamicContent.get_value(:events)
+  end
+
+  def shows
+    @shows_content = DynamicContent.get_value(:shows)
+  end
+
+  def videos
+    @videos_content = DynamicContent.get_value(:videos)
+  end
+
+
 end

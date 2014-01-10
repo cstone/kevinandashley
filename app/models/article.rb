@@ -2,6 +2,8 @@ class Article < ActiveRecord::Base
   attr_accessible :article_image, :body, :published_at, :title, :tag_list
   acts_as_taggable
 
+  default_scope order('published_at DESC')
+
   validates :title, length: { maximum: 60 }
 
   scope :published, where('published_at < ?', DateTime.now).order('created_at DESC')

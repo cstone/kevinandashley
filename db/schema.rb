@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140109154512) do
+ActiveRecord::Schema.define(:version => 20140110054716) do
 
   create_table "articles", :force => true do |t|
     t.string   "title"
@@ -36,6 +36,13 @@ ActiveRecord::Schema.define(:version => 20140109154512) do
 
   add_index "ckeditor_assets", ["assetable_type", "assetable_id"], :name => "idx_ckeditor_assetable"
   add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], :name => "idx_ckeditor_assetable_type"
+
+  create_table "dynamic_contents", :force => true do |t|
+    t.string "key"
+    t.text   "value"
+  end
+
+  add_index "dynamic_contents", ["key"], :name => "index_dynamic_contents_on_key", :unique => true
 
   create_table "events", :force => true do |t|
     t.string   "title"

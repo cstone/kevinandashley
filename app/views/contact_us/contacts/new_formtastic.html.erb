@@ -1,5 +1,5 @@
 <h3><%= t('.contact_us') %></h3>
-<p>&nbsp;</p>
+<p><%= raw @contact_us_content %></p>
 <%= semantic_form_for @contact, :url => contacts_path do |f| %>
   <%= f.input :name, :label => t('.name') if ContactUs.require_name %>
   <%= f.input :email, :label => t('.email') %>
