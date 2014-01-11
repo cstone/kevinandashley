@@ -27,7 +27,7 @@
           </ul>
         </li>
         <li class="<%= is_active?(shows_path) %> <%= 'active' if controller_name == 'shows' %>">
-          <%= link_to 'Shows', shows_path %>
+          <%= link_to 'Upcoming Shows', shows_path %>
         </li>
         <li class="<%= is_active?(blog_path) %> <%= 'active' if controller_name == 'blog' %> <%= 'active' if controller_name == 'articles' %>">
           <%= link_to 'Blog', blog_path %>
@@ -43,7 +43,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><%= link_to 'Facebook', 'https://www.facebook.com/ISTAEntertainmentSpotlight', target: 'blank' %></li>
-            <li><%= link_to 'Listen', '/pages/listenlive' %></li>
+            <li><%= link_to 'Listen', '/pages/listen' %></li>
             <li class="<%= is_active?(contact_us_path) %>">
               <%= link_to 'Contact Us', contact_us_path %>
             </li>

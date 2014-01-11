@@ -1,7 +1,7 @@
 <% if !@next_shows.empty? %>
     <div class="row sidebox">
     <% @next_shows.each do |show| %>
-        <p><strong>Next Show:</strong> <%= link_to show.show_topic_start, show %></p>
+        <p><strong>Next Show:</strong> <br/><%= link_to show.show_topic_start, show %></p>
     <% end %>
     </div>
 <% end %>

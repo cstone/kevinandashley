@@ -3,6 +3,7 @@
     <h3>Articles tagged with <%= params[:tag] %></h3>
 <% else %>
     <h3>Articles</h3>
+    <p><%= raw @articles_content %></p>
 <% end %>
 <% @articles.each do |article| %>
     <h4><%= link_to_unless_current article.title, article %></h4>

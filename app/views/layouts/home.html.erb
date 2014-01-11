@@ -56,14 +56,6 @@
         <div class="row">
           <h4>Welcome to the ISTA Entertainment Spotlight</h4>
         </div>
-        <% if !@next_shows.empty? %>
-            <div class="row sidebox">
-              <% @next_shows.each do |show| %>
-                  <p><strong>Next Show:</strong> <%= link_to show.date.strftime("%m/%d/%Y"), show %> at <%= link_to show.time.strftime("%I:%M %p"), show %></p>
-                  <p><strong>Topic:</strong> <%= link_to truncate(show.topic, :length => 40), show %> </p>
-              <% end %>
-            </div>
-        <% end %>
         <div class="row">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non dignissim ligula. Pellentesque mattis, est eu lobortis condimentum, neque augue bibendum libero, eu placerat arcu quam in lacus. Duis id porta est. Maecenas pharetra, magna ultricies sodales interdum, metus felis rutrum tortor, et cursus tortor sem eu dolor. Maecenas sed purus eu sapien dictum auctor in sit amet lectus. Suspendisse malesuada eget turpis vel mattis. Donec lectus ligula, pellentesque sit amet porttitor sit amet, dictum eu nibh. Nam gravida enim enim. Pellentesque a quam in mauris sagittis pharetra. Maecenas id lectus a dui convallis ornare. Fusce faucibus nisi non facilisis placerat. Fusce porttitor lectus vel tincidunt vestibulum.

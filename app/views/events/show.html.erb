@@ -14,17 +14,13 @@
   <% if !@event.address.empty? %>
   <tr>
     <td></td>
-    <td><%= @event.address %></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><%= @event.city %>, <%= @event.state %> <%= @event.zip %></td>
+    <td><%= @event.address %> <%= @event.city %>, <%= @event.state %> <%= @event.zip %></td>
   </tr>
   <% end %>
   <% if !@event.description.empty? %>
       <tr>
         <td><strong>Description:</strong></td>
-        <td><%= simple_format(@event.description) %></td>
+        <td><%= raw @event.description %></td>
       </tr>
   <% end %>
   <% if !@event.url.empty? %>

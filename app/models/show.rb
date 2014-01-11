@@ -5,12 +5,13 @@ class Show < ActiveRecord::Base
 
   after_destroy :delete_image
 
-  default_scope order(:start)
+  default_scope order('start DESC')
 
-  validates_presence_of :date, :description, :time, :topic
+  validates_presence_of :description, :topic
 
   scope :upcoming, where('start >= ?', Date.today)
   scope :next_show, where('start >= ?', Date.today).limit(1)
+  scope :one_next_show, order('start DESC').limit(1)
 
   def delete_image
     self.guest_image.remove_guest_image!
