@@ -1,5 +1,6 @@
 Kevinandashley::Application.routes.draw do
 
+  root :to => 'home#index'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
@@ -31,7 +32,7 @@ Kevinandashley::Application.routes.draw do
 
   match 'blog' => 'blog#index', :as => 'blog'
 
-  root :to => 'home#index'
+
 
   mount Ckeditor::Engine => '/ckeditor'
 

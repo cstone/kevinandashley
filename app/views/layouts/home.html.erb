@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ISTA Entertainment Spotlight</title>
+  <title><%= @sitename_content %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<%= render 'layouts/structure/facebook-masthead' %>
+
 
 <!-----------------------------------------------
 -------------------------------------------------
@@ -54,18 +48,7 @@
       ------------------------------------------------>
       <div class="col-md-9" >
         <div class="row">
-          <h4>Welcome to the ISTA Entertainment Spotlight</h4>
-        </div>
-        <div class="row">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non dignissim ligula. Pellentesque mattis, est eu lobortis condimentum, neque augue bibendum libero, eu placerat arcu quam in lacus. Duis id porta est. Maecenas pharetra, magna ultricies sodales interdum, metus felis rutrum tortor, et cursus tortor sem eu dolor. Maecenas sed purus eu sapien dictum auctor in sit amet lectus. Suspendisse malesuada eget turpis vel mattis. Donec lectus ligula, pellentesque sit amet porttitor sit amet, dictum eu nibh. Nam gravida enim enim. Pellentesque a quam in mauris sagittis pharetra. Maecenas id lectus a dui convallis ornare. Fusce faucibus nisi non facilisis placerat. Fusce porttitor lectus vel tincidunt vestibulum.
-          </p>
-          <p>
-            Nulla accumsan aliquam arcu. Cras vel tempus diam. Quisque et fermentum enim. Ut convallis scelerisque est vitae rutrum. Maecenas ut velit tristique, blandit erat ac, pharetra risus. Nullam non sollicitudin elit, dictum viverra nisl. Vestibulum posuere, ipsum in tincidunt sodales, turpis ipsum condimentum justo, sed convallis ipsum nisi quis tellus. Duis quis felis nisi. Cras nec dui eget nisi tincidunt tempus. Maecenas in ultricies velit. Fusce orci urna, rhoncus tempus interdum eget, pellentesque eu ante. Curabitur in odio mi. Nulla eu felis velit. Fusce vel dolor egestas, hendrerit neque at, adipiscing dolor. Nam nec nunc tortor.
-          </p>
-          <p>
-            Morbi justo diam, iaculis vel pulvinar vitae, mollis at sapien. Fusce a turpis quis risus pellentesque viverra. Suspendisse quam est, pharetra sed sapien at, rutrum eleifend arcu. Maecenas eget porta nibh. Proin in dui eu felis egestas elementum quis et nulla. Morbi ornare, elit quis vehicula commodo, mauris magna varius libero, in lacinia nisl justo in augue. Donec et malesuada diam, eget pharetra dolor. Duis tristique augue massa, at malesuada velit adipiscing non. Curabitur convallis fermentum nulla, a euismod sapien euismod eget.
-          </p>
+          <p><%= simple_format @home_content %></p>
         </div>
         <div class="row">
           <div class="col-md-6 whitebox">

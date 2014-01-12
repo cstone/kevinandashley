@@ -4,7 +4,8 @@ class ApplicationController < ActionController::Base
   before_filter :get_upcoming_events
   before_filter :get_next_shows, :next_show
   before_filter :get_home_articles
-  before_filter :events, :home, :contact_us, :shows, :videos, :articles
+  before_filter :events, :home, :contact_us, :shows, :videos, :articles, :footer_line, :sitename
+
 
   def get_upcoming_events
     @upcoming_events = Event.upcoming
@@ -19,7 +20,11 @@ class ApplicationController < ActionController::Base
   end
 
   def get_home_articles
-    @articles = Article.home_featured
+    @home_articles = Article.home_featured
+  end
+
+  def sitename
+    @sitename_content = DynamicContent.get_value(:sitename)
   end
 
 
@@ -46,6 +51,22 @@ class ApplicationController < ActionController::Base
   def articles
     @articles_content = DynamicContent.get_value(:articles)
   end
+
+  def footer_line
+    @footer_line_content = DynamicContent.get_value(:footer_line)
+  end
+
+
+
+  private
+  def restrict_access msg
+    sign_out current_user
+    flash[:error] = msg
+    flash[:info]="<h5><a href='/contactus'>Click here to contact our support team.</a></h5>"
+    root_path
+  end
+
+
 
 
 end

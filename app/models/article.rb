@@ -10,8 +10,8 @@ class Article < ActiveRecord::Base
   scope :draft, lambda { where(published: false) }
   scope :featured, lambda { where(featured: true)}
   scope :active, where('published_at != NULL')
-  scope :recent, published.order(:created_at).limit(5)
-  scope :home_featured, published.order(:created_at).limit(3)
+  scope :recent, published.order('published_at DESC').limit(5)
+  scope :home_featured, published.order('published_at DESC').limit(3)
 
   after_create :set_published_time
 
