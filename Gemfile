@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 ruby '1.9.3'
 
-=begin
 gem 'rails', '3.2.13'
 gem 'font-awesome-rails'
 gem 'turbolinks'
@@ -18,7 +17,6 @@ gem 'carrierwave'
 gem 'fog'
 gem 'figaro'
 gem 'formtastic'
-=end
 gem 'activeadmin'
 gem 'ckeditor'
 gem 'mini_magick'
