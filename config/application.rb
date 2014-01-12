@@ -61,9 +61,13 @@ module Kevinandashley
 
     config.assets.initialize_on_precompile = false
 
-    #config.assets.precompile += Ckeditor.assets
+    config.assets.precompile += Ckeditor.assets
 
-    config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
+    # Do not compress assets
+    config.assets.compress = true
+
+    # Expands the lines which load the assets
+    config.assets.debug = false
 
   end
 end
