@@ -21,7 +21,7 @@ gem 'activeadmin'
 gem 'ckeditor'
 gem 'mini_magick'
 gem 'cancan'
-gem 'rails_12factor', group: :production
+gem 'meta_search',    '>= 1.1.0.pre'
 
 
 
