@@ -18,3 +18,7 @@
 /config/application.yml
 
 public/**
+*.psd
+*.pdf
+/test
+/spec

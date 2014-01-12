@@ -1,6 +1,12 @@
 require File.expand_path('../boot', __FILE__)
 
-require 'rails/all'
+# Pick the frameworks you want:
+require "active_record/railtie"
+require "action_controller/railtie"
+require "action_mailer/railtie"
+require "active_resource/railtie"
+require "sprockets/railtie"
+# require "rails/test_unit/railtie"
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
@@ -59,15 +65,7 @@ module Kevinandashley
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    config.assets.initialize_on_precompile = false
-
-    config.assets.precompile += Ckeditor.assets
-
-    # Do not compress assets
-    config.assets.compress = true
-
-    # Expands the lines which load the assets
-    config.assets.debug = false
-
+    # Heroku requires this to be false
+    config.assets.initialize_on_precompile=false
   end
 end
