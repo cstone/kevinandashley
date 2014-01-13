@@ -66,7 +66,10 @@ module Kevinandashley
 
     config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
 
-    config.assets.compile = true
+    config.assets.precompile += %w(   active_admin.css.scss
+                                  active_admin/print.css
+                                  active_admin.js
+                                )
 
   end
 end
