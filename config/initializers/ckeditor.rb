@@ -16,4 +16,7 @@ Ckeditor.setup do |config|
 
   # Setup authorization to be run as a before filter
   # config.authorize_with :cancan
+
+  assets_languages = [ 'fr', 'en']
+  assets_plugins = [ 'dialog', 'filebrowser']
 end
