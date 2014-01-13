@@ -64,11 +64,7 @@ module Kevinandashley
 
     config.assets.precompile += Ckeditor.assets
 
-    # Do not compress assets
-    config.assets.compress = true
-
-    # Expands the lines which load the assets
-    config.assets.debug = false
+    config.assets.compile = true
 
   end
 end
