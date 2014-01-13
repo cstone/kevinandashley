@@ -35,6 +35,7 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+  gem 'thin'
 end
 
 # Gems used only for assets and not required
@@ -48,10 +49,10 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
   #gem 'turbo-sprockets-rails3'
+  gem 'jquery-ui-rails', :git => 'https://github.com/joliss/jquery-ui-rails'
 end
 
 gem 'jquery-rails'
-gem 'jquery-ui-rails'
 
 
 

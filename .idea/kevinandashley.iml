@@ -331,8 +331,10 @@
     <orderEntry type="library" scope="PROVIDED" name="coffee-script (v2.2.0, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script-source (v1.6.3, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="contact_us (v0.4.0, ruby-1.9.3-p125) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="daemons (v1.1.9, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="devise (v3.2.2, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, ruby-1.9.3-p125) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="eventmachine (v1.0.3, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="excon (v0.25.3, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.0.2, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="fastercsv (v1.5.5, ruby-1.9.3-p125) [gem]" level="application" />
@@ -348,7 +350,7 @@
     <orderEntry type="library" scope="PROVIDED" name="journey (v1.0.4, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v3.0.4, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-turbolinks (v2.0.1, ruby-1.9.3-p125) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="jquery-ui-rails (v4.1.1, ruby-1.9.3-p125) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jquery-ui-rails (v4.1.1@4289cf, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v1.8.1, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="kaminari (v0.14.1, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.5.4, ruby-1.9.3-p125) [gem]" level="application" />
@@ -380,6 +382,7 @@
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v2.2.2, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v1.3.8, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="subexec (v0.2.3, ruby-1.9.3-p125) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="thin (v1.5.1, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.18.1, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.1.3, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v1.4.1, ruby-1.9.3-p125) [gem]" level="application" />
