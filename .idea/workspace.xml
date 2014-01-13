@@ -4,6 +4,7 @@
     <list default="true" id="55e350b4-c094-488f-8569-4489d81cfad7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/assets_precompile__kevinandashley.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/assets_precompile__kevinandashley.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/kevinandashley.iml" afterPath="$PROJECT_DIR$/.idea/kevinandashley.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -26,8 +27,8 @@
     <SUITE FILE_PATH="coverage/kevinandashley@contact_us_install__kevinandashley.coverage" NAME="contact_us:install: kevinandashley Coverage Results" MODIFIED="1386881890138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="kevinandashley" />
     <SUITE FILE_PATH="coverage/kevinandashley@db_rollback__kevinandashley.coverage" NAME="db:rollback: kevinandashley Coverage Results" MODIFIED="1386654798579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="kevinandashley" />
     <SUITE FILE_PATH="coverage/kevinandashley@contact_us_copy_views__kevinandashley.coverage" NAME="contact_us:copy_views: kevinandashley Coverage Results" MODIFIED="1389141989971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="kevinandashley" />
+    <SUITE FILE_PATH="coverage/kevinandashley@assets_precompile__kevinandashley.coverage" NAME="assets:precompile: kevinandashley Coverage Results" MODIFIED="1389575404457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="kevinandashley" />
     <SUITE FILE_PATH="coverage/kevinandashley@db_setup__kevinandashley.coverage" NAME="db:setup: kevinandashley Coverage Results" MODIFIED="1386655860588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="kevinandashley" />
-    <SUITE FILE_PATH="coverage/kevinandashley@assets_precompile__kevinandashley.coverage" NAME="assets:precompile: kevinandashley Coverage Results" MODIFIED="1389542432369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="kevinandashley" />
     <SUITE FILE_PATH="coverage/kevinandashley@Rails_console__kevinandashley.coverage" NAME="Rails console: kevinandashley Coverage Results" MODIFIED="1389451462930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="kevinandashley" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -78,10 +79,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="0" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.87297297" vertical-offset="612" max-vertical-offset="1326">
+            <state line="37" column="0" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0" vertical-offset="938" max-vertical-offset="1309">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="65" column="64" selection-start="2483" selection-end="2483" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
               <folding />
             </state>
           </provider>
@@ -96,19 +106,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../cts-test/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="5" selection-start="585" selection-end="3106" vertical-scroll-proportion="0.0" vertical-offset="700" max-vertical-offset="1309">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="18" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="391">
+            <state line="69" column="5" selection-start="585" selection-end="3106" vertical-scroll-proportion="1.2783784" vertical-offset="700" max-vertical-offset="1309">
               <folding />
             </state>
           </provider>
@@ -266,7 +267,79 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kevinandashley" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kevinandashley" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="environments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kevinandashley" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kevinandashley" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kevinandashley" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kevinandashley" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kevinandashley" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kevinandashley" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -306,7 +379,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="restartRequiresConfirmation" value="true" />
   </component>
-  <component name="RunManager" selected="Rake.assets:clean: kevinandashley">
+  <component name="RunManager" selected="Rake.assets:precompile: kevinandashley">
     <configuration default="false" name="IRB console: kevinandashley" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
       <module name="kevinandashley" />
       <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -754,7 +827,11 @@
       <created>1389570192932</created>
       <updated>1389570192932</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Add Slugignore&#10;">
+      <created>1389573735550</created>
+      <updated>1389573735550</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1084,18 +1161,6 @@
         <state line="9" column="0" selection-start="35" selection-end="2476" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="64" selection-start="2483" selection-end="2483" vertical-scroll-proportion="0.9130435" vertical-offset="748" max-vertical-offset="1241" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="18" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="374">
@@ -1106,13 +1171,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="13" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="2499">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../cts-test/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="5" selection-start="585" selection-end="3106" vertical-scroll-proportion="0.0" vertical-offset="700" max-vertical-offset="1309">
           <folding />
         </state>
       </provider>
@@ -1138,9 +1196,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="64" selection-start="2483" selection-end="2483" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.87297297" vertical-offset="612" max-vertical-offset="1326">
+        <state line="37" column="0" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0" vertical-offset="938" max-vertical-offset="1309">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="18" selection-start="719" selection-end="719" vertical-scroll-proportion="0.7250674" vertical-offset="20" max-vertical-offset="391">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cts-test/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="5" selection-start="585" selection-end="3106" vertical-scroll-proportion="1.2783784" vertical-offset="700" max-vertical-offset="1309">
           <folding />
         </state>
       </provider>
