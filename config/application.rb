@@ -64,6 +64,8 @@ module Kevinandashley
 
     config.assets.precompile += Ckeditor.assets
 
+    config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
+
     config.assets.compile = true
 
   end

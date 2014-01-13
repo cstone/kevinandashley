@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55e350b4-c094-488f-8569-4489d81cfad7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/ckeditor.rb" afterPath="$PROJECT_DIR$/config/initializers/ckeditor.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kevinandashley.iws" />
@@ -41,10 +40,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="0" selection-start="2809" selection-end="2809" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1292">
+            <state line="66" column="67" selection-start="3015" selection-end="3015" vertical-scroll-proportion="0.47826087" vertical-offset="935" max-vertical-offset="1326">
               <folding />
             </state>
           </provider>
@@ -86,10 +85,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ckeditor.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ckeditor.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/initializers/ckeditor.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="33" selection-start="772" selection-end="772" vertical-scroll-proportion="0.73913044" vertical-offset="0" max-vertical-offset="476">
+            <state line="17" column="33" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
               <folding />
             </state>
           </provider>
@@ -173,10 +172,10 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.slugignore" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/initializers/ckeditor.rb" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
       </list>
     </option>
   </component>
@@ -779,7 +778,11 @@
       <created>1389580963518</created>
       <updated>1389580963518</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Update CKEditor">
+      <created>1389582147186</created>
+      <updated>1389582147186</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -862,7 +865,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Add Carrierwave To Show Form" />
     <MESSAGE value="Update Carrierwave Initializer" />
     <MESSAGE value="Add Photos To Pages" />
     <MESSAGE value="Modified Controllers" />
@@ -887,7 +889,8 @@
     <MESSAGE value="Add Slugignore" />
     <MESSAGE value="Add Slugignore&#10;" />
     <MESSAGE value="Update application.rb" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update application.rb" />
+    <MESSAGE value="Update CKEditor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update CKEditor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1148,13 +1151,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="2809" selection-end="2809" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1292">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="675" selection-end="700" vertical-scroll-proportion="0.6956522" vertical-offset="0" max-vertical-offset="391">
@@ -1185,7 +1181,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/ckeditor.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="33" selection-start="772" selection-end="772" vertical-scroll-proportion="0.73913044" vertical-offset="0" max-vertical-offset="476">
+        <state line="17" column="33" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="67" selection-start="3015" selection-end="3015" vertical-scroll-proportion="0.47826087" vertical-offset="935" max-vertical-offset="1326">
           <folding />
         </state>
       </provider>
